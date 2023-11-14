@@ -9,7 +9,7 @@ public class Main {
 
         while(true) {
             String userString = scan.nextLine();
-            if (userString.equals("stop")) {
+            if (counter.isStopWord(userString)) {
                 break;
             }
             else {

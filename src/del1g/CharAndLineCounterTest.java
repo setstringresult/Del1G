@@ -24,6 +24,14 @@ public class CharAndLineCounterTest {
 
     }
 
+    @Test
+    public void testIsStopWord() {
+        CharAndLineCounter counter = new CharAndLineCounter();
+        assertEquals(true,counter.isStopWord("stop") );
+        assertEquals(false, counter.isStopWord("hello") );
+
+    }
+
 }
 
 
